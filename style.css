@@ -149,7 +149,7 @@ label {
   font-size: 14px;
   line-height: 17px;
   color: #545454;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
 }
 input,
 select {
@@ -161,7 +161,34 @@ select {
   height: 36px;
   color: inherit;
 }
+.options {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.options input[type="radio"] {
+  display: none;
+}
+.options label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  width: 74px;
+  height: 25px;
+  color: #545454;
+  background: #f0f0f0;
+  border-radius: 2px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
 
+.options input[type="radio"]:checked + label {
+  background: #3766e8;
+  color: #ced4da;
+}
 input[type="submit"] {
   background: #3766e8;
   border-radius: 5px;

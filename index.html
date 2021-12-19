@@ -49,15 +49,38 @@
             </select>
           </div>
           <div class="input-field">
-            <label for="">Company size</label>
-            <select name="industry" id="">
-              <option selected disabled>Select</option>
-              <option value="Health">1-20</option>
-              <option value="">21-50</option>
-              <option value="">51-200</option>
-              <option value="">201-500</option>
-              <option value="">500+</option>
-            </select>
+            <label>Company size</label>
+            <div class="options">
+              <input type="radio" id="1-20" value="1-20" name="company-size" />
+              <label for="1-20">1-20</label>
+              <input
+                type="radio"
+                id="21-50"
+                value="21-50"
+                name="company-size"
+              />
+              <label for="21-50">21-50</label>
+
+              <input
+                type="radio"
+                id="51-200"
+                value="51-200"
+                name="company-size"
+                checked
+              />
+              <label for="51-200">51-200</label>
+
+              <input
+                type="radio"
+                id="201-500"
+                value="201-500"
+                name="company-size"
+              />
+              <label for="201-500">201-500</label>
+
+              <input type="radio" id="500+" value="500+" name="company-size" />
+              <label for="500+">500+</label>
+            </div>
           </div>
 
           <input type="submit" value="Get Started" />
